@@ -1,0 +1,57 @@
+body {
+    color:              #000000;
+
+    background-image:   none;
+    background-repeat:  repeat;
+
+    background-color:   #339999;
+    
+    text-decoration:    none;
+    text-transform:     none;
+    font-family:        Arial, Verdana, sans-serif ;
+
+    margin:             5pt;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.outline { 
+    margin: auto;
+    padding: 15px;
+    background: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;  	
+}
+
+.menu { 
+    margin: auto;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+.menuheader { 
+    margin: auto;
+    width: 164px;
+    padding: 10px;
+}
+
+.menuitem { 
+    text-align: center;
+    margin: auto;
+    width: 248px;
+    padding: 10px;
+}
+
+.logocontainer { 
+    width: 248px;
+    height: 226px;
+    margin: auto;
+}

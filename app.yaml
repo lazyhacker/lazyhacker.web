@@ -40,6 +40,7 @@ skip_files:
   - ^COPYING.LESSER
   - ^README\..*
   - \.gitignore
+  - \.gitattributes
   - ^\.git/.*
   - \.*\.lint$
   - ^fabfile\.py

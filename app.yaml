@@ -1,3 +1,26 @@
 runtime: go112
 main: .
 
+handlers:
+
+- url: /.well-known
+  static_dir: letsencrypt
+  mime_type: text/plain
+      
+# Load index.html at root.
+- url: /$
+  static_files: site/index.html
+  upload: site/index.html
+  secure: always
+
+# Load index.html for each sub directory.
+- url: /(.*)/$
+  static_files: site/\1/index.html
+  upload: site/.*/index.html
+  secure: always
+ 
+# Serve everything else as static files.
+- url: /(.+)
+  static_files: site/\1
+  upload: site/(.*)
+  secure: always
